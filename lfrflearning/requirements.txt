@@ -1,0 +1,9 @@
+# Reinforcement Learning drills: Q-Learning, Deep Q-Networks, Policy Gradients, Dynamic Pricing.
+# Trimmed to what the lesson notebooks actually import.
+# torch is installed separately in the Dockerfile (CPU-only index).
+gymnasium
+imageio
+pydantic
+pygame
+stable-baselines3
+tqdm

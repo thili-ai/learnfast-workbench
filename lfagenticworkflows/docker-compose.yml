@@ -1,22 +1,25 @@
-# Learn Fast — Computer Vision workbench.
+# Learn Fast — Agentic Workflows workbench.
 #
-#   docker compose -f lfvision/docker-compose.yml up
+#   docker compose -f lfagenticworkflows/docker-compose.yml up
 #
 # Then open http://127.0.0.1:8889/?token=learnfast
 # Your notebooks live in work/ at the repo root — the container sees it as /home/learnfast/work.
 #
-# No API keys: this track runs entirely on your machine.
+# This track needs API keys: copy .env.example to .env at the repo root and add your own.
 services:
   workbench:
     # Pulls the published image if it exists; otherwise builds it locally from ./Dockerfile.
-    image: ghcr.io/thili-ai/learnfast-workbench-lfvision:0.1
+    image: ghcr.io/thili-ai/learnfast-workbench-lfagenticworkflows:0.1
     build: .
-    container_name: lfvision-workbench
+    container_name: lfagenticworkflows-workbench
     ports:
       - "8889:8888"
+      - "8000:8000"
     volumes:
       # Only your own work is mounted. The image ships no course notebooks by design.
       - ../work:/home/learnfast/work
+    env_file:
+      - ../.env
     # Starts as root ONLY so the entrypoint can rename its user to `learnfast` and hand over the
     # home directory; the notebook server itself then drops to that unprivileged user.
     user: root

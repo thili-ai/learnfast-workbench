@@ -1,0 +1,3 @@
+# Cybersecurity drills: Applied cryptography and secure engineering.
+# Trimmed to what the lesson notebooks actually import.
+cryptography

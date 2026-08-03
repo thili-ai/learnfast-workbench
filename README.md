@@ -48,9 +48,19 @@ you need.
 
 | Folder | Drills | API keys needed |
 |---|---|---|
+| `lfagenticworkflows/` | Agentic pipelines and orchestration | Yes — see `.env.example` |
+| `lfagents/` | Agent frameworks, RAG, LangGraph, multi-agent systems | Yes — see `.env.example` |
+| `lfcollaborativefiltering/` | Collaborative filtering | **None** |
+| `lfcybersecurity/` | Applied cryptography and secure engineering | **None** |
+| `lfllm/` | Language modelling from first principles, Build GPT from scratch | **None** |
+| `lfml/` | Classical ML foundations | **None** |
+| `lfrflearning/` | Q-Learning, Deep Q-Networks, Policy Gradients, Dynamic Pricing | **None** |
+| `lfsecurity/` | Network traffic and threat classification | **None** |
+| `lftools/` | Shipping and monetising AI tools | **None** |
+| `lftransformers/` | Transformer architecture and fine-tuning | **None** |
 | `lfvision/` | CNNs, GANs, Quantization, Vision Transformers | **None** |
 
-*(More tracks land here as they're published.)*
+Each folder is a separate environment — start only the one your drill needs.
 
 ---
 
@@ -88,7 +98,7 @@ except downloading model weights when you ask it to.
 ## What's in here
 
 ```
-lfvision/
+<track>/
   Dockerfile          how the environment is built
   requirements.txt    the libraries, trimmed to what the drills actually use
   docker-compose.yml  how it starts

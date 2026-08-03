@@ -1,4 +1,4 @@
-# Learn Fast — Computer Vision workbench
+# Learn Fast — AI Agents workbench
 #
 # An EMPTY environment: the libraries this track needs, and none of the course notebooks.
 # You write your own notebooks in work/ — that folder is what you submit for the drill.

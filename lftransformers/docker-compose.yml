@@ -1,6 +1,6 @@
-# Learn Fast — Computer Vision workbench.
+# Learn Fast — Transformers workbench.
 #
-#   docker compose -f lfvision/docker-compose.yml up
+#   docker compose -f lftransformers/docker-compose.yml up
 #
 # Then open http://127.0.0.1:8889/?token=learnfast
 # Your notebooks live in work/ at the repo root — the container sees it as /home/learnfast/work.
@@ -9,9 +9,9 @@
 services:
   workbench:
     # Pulls the published image if it exists; otherwise builds it locally from ./Dockerfile.
-    image: ghcr.io/thili-ai/learnfast-workbench-lfvision:0.1
+    image: ghcr.io/thili-ai/learnfast-workbench-lftransformers:0.1
     build: .
-    container_name: lfvision-workbench
+    container_name: lftransformers-workbench
     ports:
       - "8889:8888"
     volumes:

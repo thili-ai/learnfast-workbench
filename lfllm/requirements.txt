@@ -1,8 +1,6 @@
-# Computer Vision drills: CNNs, GANs, Quantization, Vision Transformers.
+# Language Models drills: Language modelling from first principles, Build GPT from scratch.
 # Trimmed to what the lesson notebooks actually import.
 # torch is installed separately in the Dockerfile (CPU-only index).
 datasets
-evaluate
-sentence-transformers
 transformers
 accelerate

@@ -1,6 +1,6 @@
-# Learn Fast — Computer Vision workbench.
+# Learn Fast — AI Tooling workbench.
 #
-#   docker compose -f lfvision/docker-compose.yml up
+#   docker compose -f lftools/docker-compose.yml up
 #
 # Then open http://127.0.0.1:8889/?token=learnfast
 # Your notebooks live in work/ at the repo root — the container sees it as /home/learnfast/work.
@@ -9,11 +9,12 @@
 services:
   workbench:
     # Pulls the published image if it exists; otherwise builds it locally from ./Dockerfile.
-    image: ghcr.io/thili-ai/learnfast-workbench-lfvision:0.1
+    image: ghcr.io/thili-ai/learnfast-workbench-lftools:0.1
     build: .
-    container_name: lfvision-workbench
+    container_name: lftools-workbench
     ports:
       - "8889:8888"
+      - "8000:8000"
     volumes:
       # Only your own work is mounted. The image ships no course notebooks by design.
       - ../work:/home/learnfast/work

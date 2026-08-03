@@ -1,0 +1,9 @@
+# AI Tooling drills: Shipping and monetising AI tools.
+# Trimmed to what the lesson notebooks actually import.
+# torch is installed separately in the Dockerfile (CPU-only index).
+fastapi
+httpx
+transformers
+
+# Learn Fast reference implementations — the libraries you build in these drills.
+git+https://github.com/thili-ai/thilishipagent.git

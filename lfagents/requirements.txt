@@ -1,0 +1,31 @@
+# AI Agents drills: Agent frameworks, RAG, LangGraph, multi-agent systems.
+# Trimmed to what the lesson notebooks actually import.
+# torch is installed separately in the Dockerfile (CPU-only index).
+chainlit
+chromadb
+cryptography
+datasets
+emotionclassifier
+fastapi
+google-genai
+groq
+gymnasium
+langchain
+langchain-core
+langchain-groq
+langchain-huggingface
+langchain-ollama
+langchain-openai
+langgraph
+optuna
+plotly
+pydantic
+pymupdf
+sentence-transformers
+streamlit
+transformers
+
+# Learn Fast reference implementations — the libraries you build in these drills.
+git+https://github.com/thili-ai/thilicodex.git
+git+https://github.com/thili-ai/thilimail.git
+git+https://github.com/thili-ai/thilimem.git

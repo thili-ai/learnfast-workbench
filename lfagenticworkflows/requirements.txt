@@ -1,0 +1,3 @@
+# Agentic Workflows drills: Agentic pipelines and orchestration.
+# Trimmed to what the lesson notebooks actually import.
+google-genai

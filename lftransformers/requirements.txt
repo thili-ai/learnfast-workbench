@@ -1,8 +1,6 @@
-# Computer Vision drills: CNNs, GANs, Quantization, Vision Transformers.
+# Transformers drills: Transformer architecture and fine-tuning.
 # Trimmed to what the lesson notebooks actually import.
 # torch is installed separately in the Dockerfile (CPU-only index).
 datasets
-evaluate
-sentence-transformers
 transformers
 accelerate
