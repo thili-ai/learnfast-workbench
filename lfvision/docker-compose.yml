@@ -1,0 +1,32 @@
+# Learn Fast — Computer Vision workbench.
+#
+#   docker compose -f lfvision/docker-compose.yml up
+#
+# Then open http://127.0.0.1:8889/?token=learnfast
+# Your notebooks live in work/ at the repo root — the container sees it as /home/learnfast/work.
+#
+# No API keys: the vision drills run entirely on your machine.
+services:
+  workbench:
+    # Pulls the published image if it exists; otherwise builds it locally from ./Dockerfile.
+    image: ghcr.io/thili-ai/learnfast-workbench-lfvision:0.1
+    build: .
+    container_name: lfvision-workbench
+    ports:
+      - "8889:8888"
+    volumes:
+      # Only your own work is mounted. The image ships no course notebooks by design.
+      - ../work:/home/learnfast/work
+    # Starts as root ONLY so the entrypoint can rename its default user to `learnfast` and hand the
+    # home directory over; the notebook server itself then drops to that unprivileged user. This is
+    # upstream's supported path — doing the rename inside the Dockerfile instead makes the base
+    # image's start.sh fail on `id -u jovyan` and the container exits 1 with no error.
+    user: root
+    environment:
+      NB_USER: learnfast
+      NB_UID: "1000"
+      CHOWN_HOME: "yes"
+      JUPYTER_TOKEN: ${JUPYTER_TOKEN:-learnfast}
+    # Training a model in the default 2 GB Docker Desktop allocation will be killed mid-epoch and
+    # look like a broken image. Give Docker at least 8 GB (Settings → Resources).
+    shm_size: "2gb"

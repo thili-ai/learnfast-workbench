@@ -1,0 +1,8 @@
+# Vision drills: lfcnn, lfgan, lfquantization, lfvit.
+# Trimmed to what the lesson notebooks actually import. torch + torchvision are installed
+# separately in the Dockerfile (CPU-only index), so they are not listed here.
+transformers
+datasets
+evaluate
+accelerate
+sentence-transformers
