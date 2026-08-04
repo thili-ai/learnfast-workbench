@@ -10,13 +10,33 @@ notebooks in `work/`, and that folder becomes the repo you submit at the end of 
 
 ## Start here
 
-**1. Click "Use this template"** (green button, top of this page) → *Create a new repository*.
-Name it whatever you like — `learnfast-work` is a good default. **This repo is now yours.**
+You'll make your own copy of this repository, run one command, and work inside it. Your copy is where
+your notebooks live and it's what you submit at the end of the drill.
 
-> Use the template button, not Fork. A fork carries our commit history; a template gives you a clean
-> first commit, so the work in it is unambiguously yours — which matters when your drill is graded.
+You need a **free GitHub account** and **Docker Desktop** installed. Nothing else.
 
-**2. Clone it and start the workbench for your drill:**
+### 1. Make your own copy
+
+You're reading this on GitHub, so the button is right above you on this page:
+
+1. Sign in to GitHub (the button doesn't appear until you do).
+2. Click the green **Use this template** button at the top right of this page.
+3. Choose **Create a new repository**.
+4. Give it a name — `learnfast-work` is a good default — and click **Create repository**.
+
+GitHub now has a copy under *your* account. It looks identical, but it belongs to you.
+
+> **Why not Fork?** A fork stays tied to ours and carries our commit history. A template copy starts
+> with a clean history, so the commits in it are yours — which matters, because how you build is part
+> of what gets assessed.
+
+> **Just want to look around?** You can `git clone` this repo directly and run it without making a copy.
+> But you'll need your own repository to submit the drill, so the template route is the one to take.
+
+### 2. Clone your copy and start the workbench
+
+Replace `<your-username>` with your GitHub username, and `lfvision` with your drill's track from the
+table below:
 
 ```bash
 git clone https://github.com/<your-username>/learnfast-work.git
@@ -24,18 +44,25 @@ cd learnfast-work
 docker compose -f lfvision/docker-compose.yml up
 ```
 
-**3. Open** <http://127.0.0.1:8889/?token=learnfast>
+The first run downloads and builds the environment — several gigabytes, usually 5–15 minutes. After
+that it starts in seconds.
 
-**4. Work in the `work/` folder.** Create notebooks, write code, break things. Everything you save there
-is on your own machine, in your own git repo.
+### 3. Open it
 
-**5. When the drill is done:**
+<http://127.0.0.1:8889/?token=learnfast>
+
+### 4. Work in the `work/` folder
+
+Create notebooks, write code, break things. Everything you save there is on your own machine, inside
+your own git repository.
+
+### 5. Submit
 
 ```bash
 git add work/ && git commit -m "my drill build" && git push
 ```
 
-Submit that repository's URL on the drill page. Done.
+Paste that repository's URL on the drill page. Done.
 
 To stop the workbench: `Ctrl-C`, or `docker compose -f lfvision/docker-compose.yml down`.
 
