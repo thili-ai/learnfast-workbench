@@ -1,3 +1,9 @@
 # Trimmed to what the lesson notebooks actually import, plus the scientific stack this track
 # needs (the minimal base ships none of it).
-google-genai
+# torch is installed separately in the Dockerfile (CPU-only index).
+matplotlib
+numpy
+pandas
+scikit-learn
+scipy
+seaborn
