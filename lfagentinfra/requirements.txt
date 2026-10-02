@@ -7,3 +7,4 @@ faker
 pytest
 a2a-sdk
 fastapi
+git+https://github.com/thili-ai/thilimcp.git
