@@ -12,4 +12,9 @@ FROM quay.io/jupyter/minimal-notebook:python-3.12
 # minimal-notebook ships JupyterLab and nothing else, so every library this track uses is
 # listed explicitly.
 COPY requirements.txt /tmp/requirements.txt
-RUN pip install --no-cache-dir -r /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt && \
+    # The 'Brotli' package's compiled process() doesn't accept the output_buffer_limit kwarg
+    # that httpx2's BrotliDecoder calls it with — a real incompatibility, not a config error.
+    # Nothing here actually needs brotli (gzip/deflate cover it); removing it stops httpx2 from
+    # ever negotiating 'br' and hitting the broken decode path. Confirmed live 2026-10-02.
+    pip uninstall -y Brotli brotlicffi 2>/dev/null || true
