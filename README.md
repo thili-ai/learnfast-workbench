@@ -76,6 +76,7 @@ you need.
 | Folder | Drills | API keys needed |
 |---|---|---|
 | `lfagenticworkflows/` | Agentic pipelines and orchestration | Yes — see `.env.example` |
+| `lfagentinfra/` | MCP servers, A2A, multi-agent orchestration | Yes — see `.env.example` |
 | `lfagents/` | Agent frameworks, RAG, LangGraph, multi-agent systems | Yes — see `.env.example` |
 | `lfcollaborativefiltering/` | Collaborative filtering | **None** |
 | `lfcybersecurity/` | Applied cryptography and secure engineering | **None** |

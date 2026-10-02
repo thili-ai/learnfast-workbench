@@ -1,0 +1,7 @@
+# Trimmed to what the lesson notebooks actually import — the minimal base ships none of it.
+mcp
+anthropic
+openai
+uvicorn
+faker
+pytest
