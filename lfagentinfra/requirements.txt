@@ -5,3 +5,5 @@ openai
 uvicorn
 faker
 pytest
+a2a-sdk
+fastapi
