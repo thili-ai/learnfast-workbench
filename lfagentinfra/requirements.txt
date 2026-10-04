@@ -8,3 +8,4 @@ pytest
 a2a-sdk
 fastapi
 git+https://github.com/thili-ai/thilimcp.git
+git+https://github.com/thili-ai/thilia2a.git
