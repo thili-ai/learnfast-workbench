@@ -82,6 +82,7 @@ you need.
 | `lfcybersecurity/` | Applied cryptography and secure engineering | **None** |
 | `lfllm/` | Language modelling from first principles, Build GPT from scratch | **None** |
 | `lfml/` | Classical ML foundations | **None** |
+| `lfpython/` | Python engineering: classes, typed CLI tools, testing and packaging | **None** |
 | `lfrflearning/` | Q-Learning, Deep Q-Networks, Policy Gradients, Dynamic Pricing | **None** |
 | `lfsecurity/` | Network traffic and threat classification | **None** |
 | `lftools/` | Shipping and monetising AI tools | **None** |

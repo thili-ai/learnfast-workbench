@@ -1,0 +1,13 @@
+# Trimmed to what the lfpython lesson notebooks actually import — the minimal base ships none of it.
+#
+# streamlit is pinned on purpose: lfbudget lessons 8-9 teach a threading pattern verified against
+# exactly this version. Re-verify those lessons before bumping it.
+streamlit==1.65.0
+pytest>=8
+pydantic>=2.5
+typer>=0.12
+pytest-cov>=5
+mypy>=1.10
+ruff>=0.5
+psutil>=5.9
+uv
