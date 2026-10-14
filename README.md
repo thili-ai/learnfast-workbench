@@ -100,7 +100,7 @@ Each folder is a separate environment — start only the one your drill needs.
 killed mid-run and look like a broken image. Set **8 GB or more** in Docker Desktop → Settings →
 Resources. This is the single most common "it doesn't work".
 
-**The first start is slow.** It downloads a multi-gigabyte image once. After that, seconds.
+**The first start is slow.** Docker builds the image on your machine once, downloading a multi-gigabyte base. After that, seconds.
 
 **Your files live on your machine.** `work/` is a mounted folder — the container reads and writes your
 real directory. Delete the container, your work stays. But anything saved *outside* `work/` inside the
@@ -120,7 +120,6 @@ except downloading model weights when you ask it to.
 |---|---|
 | `port is already allocated` | Something else uses 8889. Change the left-hand number in `docker-compose.yml` to `8890:8888`. |
 | Kernel dies during training | Docker memory limit — raise it to 8 GB+ (above). |
-| `no matching manifest` | Your machine's architecture isn't in the published image; the compose file falls back to building locally, which takes a while but works. |
 | Notebook asks for a token | It's `learnfast`, or use the full URL above. |
 
 ---

@@ -10,8 +10,7 @@
 # need it). OPENAI_API_KEY is optional — only lesson 1's "other providers" bonus section uses it.
 services:
   workbench:
-    # Pulls the published image if it exists; otherwise builds it locally from ./Dockerfile.
-    image: ghcr.io/thili-ai/learnfast-workbench-lfagentinfra:0.1
+    # Built locally from ./Dockerfile on first run; nothing is pulled from a registry.
     build: .
     container_name: lfagentinfra-workbench
     ports:

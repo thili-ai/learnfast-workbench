@@ -8,8 +8,7 @@
 # This track needs API keys: copy .env.example to .env at the repo root and add your own.
 services:
   workbench:
-    # Pulls the published image if it exists; otherwise builds it locally from ./Dockerfile.
-    image: ghcr.io/thili-ai/learnfast-workbench-lfagenticworkflows:0.1
+    # Built locally from ./Dockerfile on first run; nothing is pulled from a registry.
     build: .
     container_name: lfagenticworkflows-workbench
     ports:
