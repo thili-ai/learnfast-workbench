@@ -81,6 +81,7 @@ you need.
 | `lfcollaborativefiltering/` | Collaborative filtering | **None** |
 | `lfcybersecurity/` | Applied cryptography and secure engineering | **None** |
 | `lfllm/` | Language modelling from first principles, Build GPT from scratch | **None** |
+| `lflogistics/` | Freight and logistics: building a synthetic-data package with a local language model | **None**, but install [Ollama](https://ollama.com) on your machine |
 | `lfml/` | Classical ML foundations | **None** |
 | `lfpython/` | Python engineering: classes, typed CLI tools, testing, packaging, and asyncio and concurrency | **None** |
 | `lfrflearning/` | Q-Learning, Deep Q-Networks, Policy Gradients, Dynamic Pricing | **None** |

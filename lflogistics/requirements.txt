@@ -1,0 +1,9 @@
+# The lessons have you write your own package (harborsynth) using only the standard library.
+#
+# thilisynth is the finished version of that package, installed from GitHub (it is not on PyPI).
+# It is here so the "check it against thilisynth" cell at the end of each lesson can run.
+# Without it those cells print a note and skip, and nothing else breaks.
+git+https://github.com/thili-ai/thilisynth.git
+
+# Lesson 7 draws the diversity/coverage trade-off.
+matplotlib
