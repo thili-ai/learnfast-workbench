@@ -7,3 +7,8 @@ git+https://github.com/thili-ai/thilisynth.git
 
 # Lesson 7 draws the diversity/coverage trade-off.
 matplotlib
+
+# Internship 2 (the booking agent) runs Harborline's TMS as a small web service and calls it in-process.
+fastapi
+httpx
+uvicorn
