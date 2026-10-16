@@ -12,3 +12,7 @@ matplotlib
 fastapi
 httpx
 uvicorn
+
+# Internship 3 (the paperwork desk) trains a small token classifier and calibrates it.
+scikit-learn
+numpy
