@@ -79,6 +79,7 @@ you need.
 | `lfagentinfra/` | MCP servers, A2A, multi-agent orchestration | Yes — see `.env.example` |
 | `lfagents/` | Agent frameworks, RAG, LangGraph, multi-agent systems | Yes — see `.env.example` |
 | `lfcollaborativefiltering/` | Collaborative filtering | **None** |
+| `lfretail/` | Retail: market baskets, and a language model trained on them | **None**. Lessons 8 to 11 need an Apple-silicon Mac for MLX; lessons 1 to 7 run in the container |
 | `lfcybersecurity/` | Applied cryptography and secure engineering | **None** |
 | `lfllm/` | Language modelling from first principles, Build GPT from scratch | **None** |
 | `lflogistics/` | Freight and logistics: building a synthetic-data package, a carrier booking agent and a paperwork desk, with a local language model | **None**, but install [Ollama](https://ollama.com) on your machine |
