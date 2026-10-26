@@ -89,6 +89,7 @@ you need.
 | `lfsecurity/` | Network traffic and threat classification | **None** |
 | `lftools/` | Shipping and monetising AI tools | **None** |
 | `lftransformers/` | Transformer architecture and fine-tuning | **None** |
+| `lftour/` | AI Tour: PyTorch, Hugging Face, DuckDB, Ray, generative AI, hosting models, agents, and a map of the three clouds | **None** (two lessons offer an optional free-tier key) |
 | `lfvision/` | CNNs, GANs, Quantization, Vision Transformers | **None** |
 
 Each folder is a separate environment — start only the one your drill needs.
