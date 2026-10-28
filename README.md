@@ -78,7 +78,7 @@ you need.
 | `lfagenticworkflows/` | Agentic pipelines and orchestration | Yes — see `.env.example` |
 | `lfagentinfra/` | MCP servers, A2A, multi-agent orchestration | Yes — see `.env.example` |
 | `lfagents/` | Agent frameworks, RAG, LangGraph, multi-agent systems | Yes — see `.env.example` |
-| `lfcollaborativefiltering/` | Collaborative filtering | **None** |
+| `lfrecsys/` | Recommender systems | **None** |
 | `lfretail/` | Retail: market baskets, and a language model trained on them | **None**. Lessons 8 to 11 need an Apple-silicon Mac for MLX; lessons 1 to 7 run in the container |
 | `lfcybersecurity/` | Applied cryptography and secure engineering | **None** |
 | `lfllm/` | Language modelling from first principles, Build GPT from scratch | **None** |

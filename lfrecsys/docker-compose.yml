@@ -1,6 +1,6 @@
 # Learn Fast — Recommender Systems workbench.
 #
-#   docker compose -f lfcollaborativefiltering/docker-compose.yml up
+#   docker compose -f lfrecsys/docker-compose.yml up
 #
 # Then open http://127.0.0.1:8889/?token=learnfast
 # Your notebooks live in work/ at the repo root — the container sees it as /home/learnfast/work.
@@ -10,7 +10,7 @@ services:
   workbench:
     # Built locally from ./Dockerfile on first run; nothing is pulled from a registry.
     build: .
-    container_name: lfcollaborativefiltering-workbench
+    container_name: lfrecsys-workbench
     ports:
       - "8889:8888"
     volumes:
