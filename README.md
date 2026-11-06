@@ -15,6 +15,8 @@ your notebooks live and it's what you submit at the end of the drill.
 
 You need a **free GitHub account** and **Docker Desktop** installed. Nothing else.
 
+**Prefer to watch?** The [setup video](https://youtu.be/Ko-nRVbjRxc) walks through all of this, from making your copy to running your first notebook.
+
 ### 1. Make your own copy
 
 You're reading this on GitHub, so the button is right above you on this page:
