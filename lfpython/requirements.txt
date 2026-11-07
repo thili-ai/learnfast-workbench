@@ -22,3 +22,7 @@ uvicorn>=0.29
 
 # lfpython-lfguard (Guard Your API): signed tokens.
 pyjwt>=2.8
+
+# lfpython-lfdb (Persist It): the database toolkit.
+sqlalchemy>=2.0
+alembic>=1.13

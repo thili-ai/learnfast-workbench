@@ -86,7 +86,7 @@ you need.
 | `lfllm/` | Language modelling from first principles, Build GPT from scratch | **None** |
 | `lflogistics/` | Freight and logistics: building a synthetic-data package, a carrier booking agent and a paperwork desk, with a local language model | **None**, but install [Ollama](https://ollama.com) on your machine |
 | `lfml/` | Classical ML foundations | **None** |
-| `lfpython/` | Python engineering: classes, typed CLI tools, testing, packaging, asyncio and concurrency, NumPy with a FastAPI service, and securing an API (authentication, tokens, rate limits) | **None** |
+| `lfpython/` | Python engineering: classes, typed CLI tools, testing, packaging, asyncio and concurrency, NumPy with a FastAPI service, securing an API (authentication, tokens, rate limits), and putting a database behind it (SQLAlchemy, migrations) | **None** |
 | `lfrflearning/` | Q-Learning, Deep Q-Networks, Policy Gradients, Dynamic Pricing | **None** |
 | `lfsecurity/` | Network traffic and threat classification | **None** |
 | `lftools/` | Shipping and monetising AI tools | **None** |
