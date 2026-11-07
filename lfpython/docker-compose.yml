@@ -14,6 +14,7 @@ services:
     ports:
       - "8889:8888"
       - "8501:8501"   # the Streamlit app you build in the first drill, opened in your own browser
+      - "8765:8765"   # the API you build in the Metrics API drill, opened in your own browser
     volumes:
       # Only your own work is mounted. The image ships no course notebooks by design.
       - ../work:/home/learnfast/work
