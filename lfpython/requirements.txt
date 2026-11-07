@@ -19,3 +19,6 @@ numpy>=1.26
 pandas>=2.2
 fastapi>=0.110
 uvicorn>=0.29
+
+# lfpython-lfguard (Guard Your API): signed tokens.
+pyjwt>=2.8
