@@ -1,0 +1,14 @@
+{
+  "name": "Learn Fast — Retail",
+  "dockerComposeFile": "../../lfretail/docker-compose.yml",
+  "service": "workbench",
+  "workspaceFolder": "/home/learnfast/work",
+  "overrideCommand": false,
+  "remoteUser": "learnfast",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-toolsai.jupyter"],
+      "settings": { "python.defaultInterpreterPath": "/opt/conda/bin/python" }
+    }
+  }
+}

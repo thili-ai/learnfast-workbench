@@ -110,6 +110,12 @@ Resources. This is the single most common "it doesn't work".
 real directory. Delete the container, your work stays. But anything saved *outside* `work/` inside the
 container is gone when it stops.
 
+**Prefer VS Code?** Every folder also has a dev container (`.devcontainer/<folder>/devcontainer.json`).
+Install VS Code with the *Dev Containers* extension, open this repo, run **Dev Containers: Reopen in
+Container**, and pick your folder. It starts the same container as `docker compose up`, with your `work/`
+folder as the workspace. The "Open in VS Code" button on a drill page does this in one click, but it works
+from a copy kept inside Docker, so to keep your work in git, clone your own template copy and reopen that.
+
 **No GPU needed, ever.** These images install CPU-only PyTorch deliberately. The drills are built around
 small models so the internals stay visible on a laptop.
 
