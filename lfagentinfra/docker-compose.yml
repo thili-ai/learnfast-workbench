@@ -20,7 +20,8 @@ services:
       # Only your own work is mounted. The image ships no course notebooks by design.
       - ../work:/home/learnfast/work
     env_file:
-      - ../.env
+      - path: ../.env
+        required: false   # optional: the container starts without keys; add them to .env later
     # Starts as root ONLY so the entrypoint can rename its user to `learnfast` and hand over the
     # home directory; the notebook server itself then drops to that unprivileged user.
     user: root
