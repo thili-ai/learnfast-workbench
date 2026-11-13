@@ -1,0 +1,4 @@
+# Trimmed to what the lesson notebooks actually import — the minimal base ships none of it.
+openai
+python-dotenv
+pytest

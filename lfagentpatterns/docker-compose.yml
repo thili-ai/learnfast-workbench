@@ -1,0 +1,31 @@
+# Learn Fast — Agentic Design Patterns workbench.
+#
+#   docker compose -f lfagentpatterns/docker-compose.yml up
+#
+# Then open http://127.0.0.1:8889/?token=learnfast
+# Your notebooks live in work/ at the repo root — the container sees it as /home/learnfast/work.
+#
+# These drills need a FREE Groq API key: copy .env.example to .env at the repo root and add
+# GROQ_API_KEY (get one in about two minutes at console.groq.com, no credit card). Optional:
+# LF_MODEL to pick another Groq model, or LF_BASE_URL and a key to use any OpenAI-compatible provider.
+services:
+  workbench:
+    # Built locally from ./Dockerfile on first run; nothing is pulled from a registry.
+    build: .
+    container_name: lfagentpatterns-workbench
+    ports:
+      - "8889:8888"
+    volumes:
+      # Only your own work is mounted. The image ships no course notebooks by design.
+      - ../work:/home/learnfast/work
+    env_file:
+      - ../.env
+    # Starts as root ONLY so the entrypoint can rename its user to `learnfast` and hand over the
+    # home directory; the notebook server itself then drops to that unprivileged user.
+    user: root
+    environment:
+      NB_USER: learnfast
+      NB_UID: "1000"
+      CHOWN_HOME: "yes"
+      JUPYTER_TOKEN: ${JUPYTER_TOKEN:-learnfast}
+    shm_size: "2gb"

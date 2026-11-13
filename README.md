@@ -79,6 +79,7 @@ you need.
 |---|---|---|
 | `lfagenticworkflows/` | Agentic pipelines and orchestration | Yes — see `.env.example` |
 | `lfagentinfra/` | MCP servers, A2A, multi-agent orchestration | Yes — see `.env.example` |
+| `lfagentpatterns/` | Agentic design patterns: single-agent, multi-agent and feedback loops | Yes — a free Groq key, see `.env.example` |
 | `lfagents/` | Agent frameworks, RAG, LangGraph, multi-agent systems | Yes — see `.env.example` |
 | `lfrecsys/` | Recommender systems | **None** |
 | `lfretail/` | Retail: market baskets, and a language model trained on them | **None**. Lessons 8 to 11 need an Apple-silicon Mac for MLX; lessons 1 to 7 run in the container |
