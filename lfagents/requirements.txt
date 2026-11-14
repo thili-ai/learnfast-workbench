@@ -34,3 +34,4 @@ transformers
 git+https://github.com/thili-ai/thilicodex.git
 git+https://github.com/thili-ai/thilimail.git
 git+https://github.com/thili-ai/thilimem.git
+git+https://github.com/thili-ai/thilillm.git
