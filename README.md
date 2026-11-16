@@ -81,6 +81,7 @@ you need.
 | `lfagentinfra/` | MCP servers, A2A, multi-agent orchestration | Yes — see `.env.example` |
 | `lfagentpatterns/` | Agentic design patterns: single-agent, multi-agent and feedback loops | Yes — a free Groq key, see `.env.example` |
 | `lfagents/` | Agent frameworks, RAG, LangGraph, multi-agent systems | Yes — see `.env.example` |
+| `lfrag/` | Retrieval-augmented generation: loading documents and scans, chunking, embeddings, search, grounded answers, and measuring and diagnosing retrieval | **None** (saved model replies are included; your own `ANTHROPIC_API_KEY` is optional) |
 | `lfrecsys/` | Recommender systems | **None** |
 | `lfretail/` | Retail: market baskets, and a language model trained on them | **None**. Lessons 8 to 11 need an Apple-silicon Mac for MLX; lessons 1 to 7 run in the container |
 | `lfcybersecurity/` | Applied cryptography and secure engineering | **None** |
@@ -106,6 +107,8 @@ killed mid-run and look like a broken image. Set **8 GB or more** in Docker Desk
 Resources. This is the single most common "it doesn't work".
 
 **The first start is slow.** Docker builds the image on your machine once, downloading a multi-gigabyte base. After that, seconds.
+
+**The RAG workbench downloads a model on first use.** `lfrag/` does not ship the embedding model (about 90 MB, `all-MiniLM-L6-v2`) so the image stays smaller. The first lesson cell that loads it downloads it once and the container keeps it. You need internet for that first run. If the container is removed, the next run downloads it again.
 
 **Your files live on your machine.** `work/` is a mounted folder — the container reads and writes your
 real directory. Delete the container, your work stays. But anything saved *outside* `work/` inside the

@@ -1,0 +1,13 @@
+# The reference library is cloned to /opt/thilirag in the Dockerfile; installing from that clone
+# keeps the code and the sample data on the same version. [embed] pulls sentence-transformers.
+/opt/thilirag[embed]
+
+# Lesson 2 draws the scans; the OCR step needs the Tesseract program installed in the image.
+pillow
+numpy
+pyyaml
+pypdf
+matplotlib
+
+# Optional: record new model replies with thilirag.answer.claude_llm (your own ANTHROPIC_API_KEY).
+anthropic
