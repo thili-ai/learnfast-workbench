@@ -1,6 +1,6 @@
-# Learn Fast Workbench
+# askThili Workbench
 
-**Your lab bench for a Learn Fast internship.** One command, and you have every library the drill needs —
+**Your lab bench for an askThili internship.** One command, and you have every library the drill needs —
 no `pip install` roulette, no CUDA, no version archaeology.
 
 The workbench is **empty on purpose**. It contains the tools, not the answers. You write your own
@@ -153,4 +153,4 @@ You're welcome to read and change any of it — it's your repo now. Adding a lib
 
 ---
 
-MIT licensed. Built for [Learn Fast](https://learnfast.thili.ai) internships by [thili.ai](https://thili.ai).
+MIT licensed. Built for [askThili](https://ask.thili.ai) internships by [thili.ai](https://thili.ai).
