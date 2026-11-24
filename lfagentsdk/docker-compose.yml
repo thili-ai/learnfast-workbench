@@ -1,0 +1,32 @@
+# Learn Fast — Agent SDKs workbench.
+#
+#   docker compose -f lfagentsdk/docker-compose.yml up
+#
+# Then open http://127.0.0.1:8889/?token=learnfast
+# Your notebooks live in work/ at the repo root — the container sees it as /home/learnfast/work.
+#
+# This track needs a Google API key: copy .env.example to .env at the repo root and set GOOGLE_API_KEY to your own.
+# We make no promise about what a free key allows; that is your own account's matter.
+services:
+  workbench:
+    # Built locally from ./Dockerfile on first run; nothing is pulled from a registry.
+    build: .
+    container_name: lfagentsdk-workbench
+    ports:
+      - "8889:8888"
+    volumes:
+      # Only your own work is mounted. The image ships no course notebooks by design.
+      - ../work:/home/learnfast/work
+    env_file:
+      - path: ../.env
+        required: false   # optional: the container starts without keys; add them to .env later
+    # Starts as root ONLY so the entrypoint can rename its user to `learnfast` and hand over the
+    # home directory; the notebook server itself then drops to that unprivileged user.
+    user: root
+    environment:
+      NB_USER: learnfast
+      NB_UID: "1000"
+      CHOWN_HOME: "yes"
+      JUPYTER_TOKEN: ${JUPYTER_TOKEN:-learnfast}
+    # Firefox needs more shared memory than Docker's 64 MB default.
+    shm_size: "2gb"

@@ -80,6 +80,7 @@ you need.
 | `lfagenticworkflows/` | Agentic pipelines and orchestration | Yes — see `.env.example` |
 | `lfagentinfra/` | MCP servers, A2A, multi-agent orchestration | Yes — see `.env.example` |
 | `lfagentpatterns/` | Agentic design patterns: single-agent, multi-agent and feedback loops | Yes — a free Groq key, see `.env.example` |
+| `lfagentsdk/` | Agent SDKs: a smolagents browser agent that reads web pages through screenshots, with headless Firefox | Yes: your own `GOOGLE_API_KEY`, see `.env.example` |
 | `lfagents/` | Agent frameworks, RAG, LangGraph, multi-agent systems | Yes — see `.env.example` |
 | `lfrag/` | Retrieval-augmented generation: loading documents and scans, chunking, embeddings, search, grounded answers, and measuring and diagnosing retrieval | **None** (saved model replies are included; your own `ANTHROPIC_API_KEY` is optional) |
 | `lfrecsys/` | Recommender systems | **None** |

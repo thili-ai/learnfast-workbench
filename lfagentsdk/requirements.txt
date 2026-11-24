@@ -1,0 +1,14 @@
+# Pinned exactly: smolagents moves fast, and LiteLLM 1.82.7 and 1.82.8 were reported compromised,
+# so LiteLLM is never installed unpinned. These are the versions the drill's lessons ran on.
+smolagents[litellm]==1.26.0
+litellm==1.110.2
+
+# The browser: helium is a thin layer over Selenium, which drives the Firefox installed in the Dockerfile.
+selenium==4.53.0
+helium==7.0.4
+
+pillow
+pandas
+
+# Reads GOOGLE_API_KEY from a .env file if you keep your key there.
+python-dotenv
