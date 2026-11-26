@@ -92,6 +92,7 @@ you need.
 | `lfpython/` | Python engineering: classes, typed CLI tools, testing, packaging, asyncio and concurrency, NumPy with a FastAPI service, securing an API (authentication, tokens, rate limits), and putting a database behind it (SQLAlchemy, migrations) | **None** |
 | `lfrflearning/` | Q-Learning, Deep Q-Networks, Policy Gradients, Dynamic Pricing | **None** |
 | `lfsecurity/` | Network traffic and threat classification | **None** |
+| `lftravel/` | Travel desk: training a small model to reply with one JSON action, then serving it on a CPU | **None**. Training runs on Google Colab and the converted model runs with llama.cpp on your own computer; the rest runs in the container |
 | `lftools/` | Shipping and monetising AI tools | **None** |
 | `lftransformers/` | Transformer architecture and fine-tuning | **None** |
 | `lftour/` | AI Tour: PyTorch, Hugging Face, DuckDB, Ray, generative AI, hosting models, agents, and a map of the three clouds | **None** (two lessons offer an optional free-tier key) |

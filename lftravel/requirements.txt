@@ -1,0 +1,5 @@
+# The data generator, the scorer, the guard and the rules around the model use only the Python
+# standard library. These are here for your own tables and charts.
+numpy
+pandas
+matplotlib
